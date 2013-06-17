@@ -1,0 +1,2 @@
+require './fweets'
+run Fweets
