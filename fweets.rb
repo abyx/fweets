@@ -16,7 +16,7 @@ class Fweets < Sinatra::Base
       tweets.each do |tweet|
         maker.items.new_item do |item|
           item.link = "http://twitter.com/#{tweet.from_user}/status/#{tweet.id}"
-          text = "@#{tweet.from_user}: #{tweet.full_text}"
+          text = "#{tweet.from_user}: #{tweet.full_text}"
           item.title = text
           item.description = text
           item.updated = tweet.created_at
