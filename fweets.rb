@@ -18,8 +18,9 @@ class Fweets < Sinatra::Base
       tweets.each do |tweet|
         maker.items.new_item do |item|
           item.link = "http://twitter.com/#{tweet.from_user}/status/#{tweet.id}"
-          item.title = tweet.full_text
-          item.description = tweet.full_text
+          text = "@#{tweet.from_user}: #{tweet.full_text}"
+          item.title = text
+          item.description = text
           item.updated = tweet.created_at
           item.guid.content = tweet.id.to_s
           item.author = tweet.from_user
@@ -45,8 +46,9 @@ class Fweets < Sinatra::Base
       tweets.each do |tweet|
         maker.items.new_item do |item|
           item.link = "http://twitter.com/#{tweet.from_user}/status/#{tweet.id}"
-          item.title = tweet.full_text
-          item.description = tweet.full_text
+          text = "@#{tweet.from_user}: #{tweet.full_text}"
+          item.title = text
+          item.description = text
           item.updated = tweet.created_at
           item.guid.content = tweet.id.to_s
           item.author = tweet.from_user
