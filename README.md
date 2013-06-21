@@ -2,6 +2,8 @@
 
 Fweets is a simple server that uses the twitter API in order to create an RSS feed of tweets that can be used to trigger actions on IFTTT.
 
+Some back story about this is available [here](http://www.codelord.net/2013/06/21/do-it-yourself-twitter-triggers-for-ifttt/).
+
 ## Installation
 
 Fweets require a bit tech-savviness: we will setup a heroku app to run the server.
