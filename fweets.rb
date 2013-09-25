@@ -46,4 +46,12 @@ class Fweets < Sinatra::Base
            "@#{user} favorites",
            "http://twitter.com/#{user}/favorites")
   end
+
+  get '/hashtag/:hashtag' do
+    hashtag = params[:hashtag]
+    to_rss(Twitter.search("##{hashtag} -rt").results,
+      hashtag, 
+      "##{hashtag} search",
+      "https://twitter.com/search?q=%#{hashtag}")
+  end
 end
