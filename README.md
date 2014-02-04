@@ -6,7 +6,7 @@ Some back story about this is available [here](http://www.codelord.net/2013/06/2
 
 ## Installation
 
-Fweets require a bit tech-savviness: we will setup a heroku app to run the server.
+Fweets requires a bit tech-savviness: we will setup a heroku app to run the server.
 
   1. Clone this project from GitHub: `git clone https://github.com/abyx/fweets.git`
   2. Create a Twitter application [here](https://dev.twitter.com/apps/new)
